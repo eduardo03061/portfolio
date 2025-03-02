@@ -94,8 +94,7 @@ export default function PortfolioPage() {
             </Button>
           </div>
         </section>
-
-        {/* About Section */}
+ 
         <section id="about" className="py-12 md:py-20">
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
