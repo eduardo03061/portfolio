@@ -107,16 +107,16 @@ export default function PortfolioPage() {
             </div>
             <div className="space-y-4">
               <p className="text-lg">
-                Hello! I'm a passionate web developer with expertise in building modern web applications. I specialize
+                Hello! I&apos;m a passionate web developer with expertise in building modern web applications. I specialize
                 in both frontend and backend development, creating seamless user experiences with clean, efficient code.
               </p>
               <p className="text-lg">
-                With several years of experience in the industry, I've worked on a variety of projects from e-commerce
-                platforms to complex web applications. I'm constantly learning and adapting to new technologies to
+                With several years of experience in the industry, I&apos;ve worked on a variety of projects from e-commerce
+                platforms to complex web applications. I&apos;m constantly learning and adapting to new technologies to
                 deliver the best solutions.
               </p>
               <p className="text-lg">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
+                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects,
                 or sharing my knowledge through blog posts and community events.
               </p>
             </div>
@@ -235,7 +235,7 @@ export default function PortfolioPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <p className="text-lg">
-                I'm currently available for freelance work and open to new opportunities. If you have a project that
+                I&apos;m currently available for freelance work and open to new opportunities. If you have a project that
                 needs my expertise or if you want to discuss potential collaborations, feel free to reach out!
               </p>
               <div className="flex items-center gap-2">
