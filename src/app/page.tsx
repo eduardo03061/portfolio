@@ -100,7 +100,7 @@ export default function PortfolioPage() {
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <img
+              <Image
                 src="/placeholder.svg?height=400&width=400"
                 alt="Developer Portrait"
                 className="rounded-lg w-full max-w-md mx-auto"
