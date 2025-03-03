@@ -100,7 +100,9 @@ export default function PortfolioPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/next.svg"
+                width={400}
+                height={400}
                 alt="Developer Portrait"
                 className="rounded-lg w-full max-w-md mx-auto"
               />
@@ -193,7 +195,9 @@ export default function PortfolioPage() {
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden">
                 <Image
-                  src={project.image || "/placeholder.svg"}
+                  src={project.image || "/next.svg"}
+                  width={500}
+                  height={300}
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />
@@ -254,44 +258,17 @@ export default function PortfolioPage() {
                 {/* Add more social links as needed */}
               </div>
             </div>
-            <form className="space-y-4">
-              <div className="grid gap-4">
-                <div className="grid gap-2">
-                  <label htmlFor="name" className="text-sm font-medium">
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your email"
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your message"
-                  />
-                </div>
-              </div>
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
+            <div className="space-y-4">
+  <p className="text-lg">
+    If you want to talk to me, you can send me a message through WhatsApp.
+  </p>
+  <div className="flex items-center gap-2">
+    <Mail className="h-5 w-5" />
+    <a href="https://wa.me/523121978224" className="text-primary hover:underline">
+      Send a message
+    </a>
+  </div>
+</div>
           </div>
         </section>
       </main>
@@ -314,7 +291,7 @@ const projects = [
   {
     title: "POS Sistem",
     description: "A full system for managing sales, inventory, and customer data",
-    image: "https://vendepunto.com/assets/vendepunto-logo.png?height=300&width=500",
+    image: "/vendepunto-logo.png",
     technologies: ["Next.js", "ReactJs", "TypeScript", "Laravel", "MYSQL"],
     github: "https://github.com/yourusername/ecommerce",
     demo: "https://vendepunto.com",
@@ -322,7 +299,7 @@ const projects = [
   {
     title: "E-Commerce site",
     description: "A collaborative task manager with real-time updates and team features",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/albercasvergara.png",
     technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
     github: "https://albercasyagua.com",
     demo: "https://albercasyagua.com",
@@ -330,7 +307,7 @@ const projects = [
   {
     title: "Logabols",
     description: "A weather application with location-based forecasts and interactive maps",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/logabols.png",
     technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SCSS"],
     github: "https://github.com/yourusername/weather-app",
     demo: "https://logabols.com.mx",
