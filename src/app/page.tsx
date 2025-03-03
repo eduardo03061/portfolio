@@ -406,7 +406,7 @@ const projects = [
     description:
       "A full system for managing sales, inventory, and customer data",
     image: "/vendepunto-logo.png",
-    technologies: ["Next.js", "ReactJs", "TypeScript", "Laravel", "MYSQL"],
+    technologies: ["Next.js", "ReactJs", "TypeScript", "Laravel", "MYSQL", "React Native", "SQLite"],
     github: "https://github.com/eduardo03061",
     demo: "https://vendepunto.com",
   },
@@ -424,7 +424,7 @@ const projects = [
     description:
       "A weather application with location-based forecasts and interactive maps",
     image: "/logabols.png",
-    technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SCSS"],
+    technologies: ["ReactJs", "Laravel", "Bootstrap", "MYSQL"],
     github: "https://github.com/eduardo03061",
     demo: "https://logabols.com.mx",
   },
