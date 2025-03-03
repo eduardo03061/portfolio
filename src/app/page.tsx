@@ -6,6 +6,7 @@ import {
   ArrowUpRight,
   Code,
   Github,
+  Linkedin,
   Mail,
   Menu,
   Moon,
@@ -152,13 +153,13 @@ export default function PortfolioPage() {
         <section id="about" className="py-12 md:py-20">
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="w-max">
               <Image
-                src="/next.svg"
-                width={400}
-                height={400}
+                src="/perfil.jpeg"
+                width={300}
+                height={200}
                 alt="Developer Portrait"
-                className="rounded-lg w-full max-w-md mx-auto"
+                className="rounded-xl w-full max-w-md mx-auto"
               />
             </div>
             <div className="space-y-4">
@@ -351,7 +352,17 @@ export default function PortfolioPage() {
                     <span className="sr-only">GitHub</span>
                   </a>
                 </Button>
-                {/* Add more social links as needed */}
+                <Button variant="outline" size="icon" asChild>
+                  <a
+                    href="https://www.linkedin.com/in/eduardoahg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">Linkedin</span>
+                  </a>
+                </Button>
+                 
               </div>
             </div>
             <div className="space-y-4">
